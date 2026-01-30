@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Ideatori del Gioco | Team Creativo</title>
+    <style>
+        /* RESET TOTALE */
+        html, body { 
+            margin: 0 !important; 
+            padding: 0 !important; 
+            width: 100%;
+            background-color: #800020; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            scroll-behavior: smooth;
+        }
+
+        * { box-sizing: border-box; }
+
+        /* NAVIGAZIONE */
+        .header-nav {
+            display: block;
+            width: 100%;
+            background-color: #000000 !important;
+            border-bottom: 2px solid #ffd700;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-list { 
+            list-style: none; 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            justify-content: center; 
+        }
+
+        .nav-item a { 
+            display: block; 
+            color: #ffffff !important; 
+            text-align: center; 
+            padding: 18px 30px; 
+            text-decoration: none; 
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav-item a:hover { 
+            background-color: #ffd700 !important; 
+            color: #000000 !important; 
+        }
+
+        /* TITOLO PRINCIPALE */
+        h1 { 
+            color: #ffffff; 
+            text-align: center; 
+            text-shadow: 0 0 3px #ff0000, 0 0 10px rgba(255,255,255,0.5); 
+            margin: 50px 0; 
+            font-size: 3em;
+            text-transform: uppercase;
+        }
+
+        /* CONTAINER PRINCIPALE */
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* CARD GRUPPO (Tua esistente integrata) */
+        .team-container { 
+            display: flex; 
+            justify-content: center; 
+            margin-bottom: 60px;
+        }
+        
+        .group-card { 
+            background: rgba(0,0,0,0.9); 
+            border: 3px solid #ffd700; 
+            border-radius: 20px; 
+            padding: 30px; 
+            width: 100%; 
+            max-width: 900px; 
+            text-align: center; 
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+        }
+        
+        .photo-frame {
+            padding: 10px; 
+            background: linear-gradient(45deg, #ffd700, #b8860b);
+            border-radius: 15px; 
+            margin-bottom: 20px;
+        }
+
+        .group-photo { 
+            width: 100%; 
+            max-height: 500px; 
+            object-fit: cover; 
+            border-radius: 10px; 
+            border: 4px solid #000;
+        }
+
+        /* SEZIONE MEMBRI INDIVIDUALI */
+        .members-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .member-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-bottom: 4px solid #ffd700;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .member-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .member-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #ffd700;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .member-card h3 {
+            color: #ffd700;
+            margin: 10px 0 5px 0;
+        }
+
+        .role {
+            font-style: italic;
+            color: #cccccc;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 80px;
+            border-top: 2px solid #ffd700;
+        }
+
+        .footer-text {
+            color: #ffd700;
+            font-size: 0.9em;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="header-nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="gioco_sfondo.html">Torna al Gioco</a></li>
+            <li class="nav-item"><a href="regole_gioco.html">Come si gioca?</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <h1>Il Team</h1>
+
+        <div class="team-container">
+            <div class="group-card">
+                <div class="photo-frame">
+                    <img src="foto_gruppo.jpg" alt="Il Nostro Team" class="group-photo" onerror="this.src='https://via.placeholder.com/900x500?text=La+Nostra+Squadra'">
+                </div>
+                <h2 style="color: #ffd700; font-size: 2em; letter-spacing: 2px;">I Nostri Ideatori</h2>
+                <p style="line-height: 1.6; color: #ddd; max-width: 700px; margin: 0 auto;">
+                </p>
+            </div>
+        </div>
+
+    <footer>
+        <p class=>© 2024 - Progetto Creato con Passione dal Nostro Team</p>
+        <p style="font-size: 0.8em; color: #666;">Tutti i diritti riservati ai rispettivi ideatori.</p>
+    </footer>
+
+</body>
+</html>

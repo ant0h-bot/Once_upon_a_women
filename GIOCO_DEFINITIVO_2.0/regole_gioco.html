@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* RESET GLOBALE */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        h1 { color: #ffffff; text-align: center; text-shadow: 0 0 3px #ff0000, 0 0 5px #ffffff; margin-top: 20px; }
+        body { background-color: #800020; font-family: 'Segoe UI', Arial, sans-serif; color: white; line-height: 1.6; overflow-x: hidden; }
+        
+        /* NAVIGAZIONE INTEGRATA */
+        nav {
+            background-color: black;
+            width: 100%;
+            border-bottom: 2px solid gold;
+        }
+        nav ul { list-style-type: none; display: flex; justify-content: center; }
+        nav ul li a { 
+            display: block; color: white; text-align: center; 
+            padding: 16px 25px; text-decoration: none; font-weight: bold; transition: 0.3s; 
+        }
+        nav ul li a:hover { background-color: gold; color: black; }
+
+        /* ANIMAZIONI */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .container { 
+            max-width: 800px; margin: 40px auto; background: rgba(0,0,0,0.7); 
+            padding: 30px; border-radius: 15px; border: 2px solid gold; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .step { 
+            margin-bottom: 25px; padding-left: 20px; border-left: 3px solid gold; 
+            opacity: 0; animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .step:nth-child(1) { animation-delay: 0.2s; }
+        .step:nth-child(2) { animation-delay: 0.4s; }
+        .step:nth-child(3) { animation-delay: 0.6s; }
+        .step:nth-child(4) { animation-delay: 0.8s; }
+
+        .step h3 { color: gold; margin-bottom: 5px; text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
+        .icon { font-style: normal; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="gioco_sfondo.html">Torna al Gioco</a></li>
+            <li><a href="Ideatori_gioco.html">Ideatori</a></li>
+        </ul>
+    </nav>
+
+    <h1>Regole del Gioco</h1>
+
+    <div class="container">
+        <div class="step">
+            <h3>1. L'obiettivo</h3>
+            <p>Il computer sceglierà segretamente una delle grandi donne presenti sul tabellone. Il tuo compito è capire chi è nel minor tempo possibile.</p>
+        </div>
+        <div class="step">
+            <h3>2. Fai le domande</h3>
+            <p>Usa i menu a tendina per chiedere informazioni su Nazionalità, Epoca o Campo d'azione. Riceverai un SÌ o un NO.</p>
+        </div>
+        <div class="step">
+            <h3>3. Escludi i sospetti</h3>
+            <p>Clicca sulle immagini delle donne che vuoi eliminare. La carta si girerà mostrandoti il nome.</p>
+        </div>
+        <div class="step">
+            <h3>4. La Sfida Finale</h3>
+            <p>Quando sei sicuro, scrivi il nome e premi INDOVINA!. Se sbagli, il tabellone tremerà!</p>
+        </div>
+    </div>
+</body>
+</html>
